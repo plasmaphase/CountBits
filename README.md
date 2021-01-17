@@ -13,6 +13,8 @@ Sources:
  - AxiLiteCtrl.vhd - RTL containing logic to control AXI4 Lite interface and manage the register space therein
  - cb_pkg.vhd - RTL package containing support functions and types for the count bits module
  - countbits.vhd - RTL logic for accumulating bus, word, and byte level set bits.
+
+
 Sim:
  - cb_sim.sv - SystemVerilog simulation logic to support basic level simulation of countbits using Xilinx VIP AXI simulation blocks
  
