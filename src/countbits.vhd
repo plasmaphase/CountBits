@@ -50,7 +50,7 @@ begin
   data_valid <= maxii_wvalid and maxio_wready;
 
   -----------------------------------------------------------------------------------
-  ---------------------------- inject errors on the bus -----------------------------
+  -------------------------- accumulate set bits on bus -----------------------------
   data_bits_proc : process (clk) is
     variable accum_bus  : std_logic_vector(31 downto 0);
     variable accum_word : std_logic_vector(31 downto 0);
