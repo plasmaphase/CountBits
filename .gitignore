@@ -92,7 +92,6 @@
 *mem_init_files/
 *modelsim**
 *sim_scripts/
-*xsim/
 *synth_1/
 !*xgui
 *.jou
