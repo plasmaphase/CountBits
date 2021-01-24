@@ -37,7 +37,7 @@ import axil_vip_0_pkg::*;
     } c_regs_u;
 
 
-    bit clk, resetn, power_on, done;
+    bit clk, resetn, done;
     localparam axil_addr_width = 32;
     localparam axil_data_width = 32;
     localparam axi_addr_width = 64;
@@ -511,7 +511,6 @@ cb_top #( .AXI_RUSER_WIDTH (0),
    //transaction.  get_wr_reactive() is blocking, waiting for
    //write bursts, and servicing them continuously
    task automatic axiSlave;
-
       axi_slave_agent = new("slave vip agent", axi_vip_slave_dut.inst.IF);
       axi_slave_agent.set_agent_tag("Slave VIP");
       axi_slave_agent.set_verbosity(400);
@@ -526,9 +525,6 @@ cb_top #( .AXI_RUSER_WIDTH (0),
 
 initial
    begin
-
-    memory   = new[1 << 20];
-    power_on = 1'b0;
     done     = 1'b0;
     fork
      clock;
