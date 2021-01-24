@@ -23,11 +23,7 @@
 #########
 #IP files
 #########
-#.xci: synthesis and implemented not possible - you need to return back to the previous version to generate output products
-#.xci + .dcp: implementation possible but not re-synthesis
-#*.xci(www.spiritconsortium.org)
 !*.xci
-#*.dcp(checkpoint files)
 !*.dcp
 !*.vds
 !*.pb
@@ -91,7 +87,12 @@
 *.cache/
 *mem_init_files/
 *modelsim**
-*sim_scripts/
+*activehdl**
+*ies**
+*questa**
+*vcs**
+*xcelium**
+*riviera**
 *synth_1/
 !*xgui
 *.jou
