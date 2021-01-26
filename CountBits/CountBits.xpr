@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="/home/tron/Projects/blah/CountBits/CountBits/CountBits.xpr">
+<Project Version="7" Minor="49" Path="~/Projects/CountBits/CountBits/CountBits.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="0325e4f34e0248bdbf1031e33be5216a"/>
