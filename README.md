@@ -17,5 +17,15 @@ Sources:
 
 Sim:
  - cb_sim.sv - SystemVerilog simulation logic to support basic level simulation of countbits using Xilinx VIP AXI simulation blocks
+
+ Instructions for sim (due to VIP bug):
+  - Clone repo
+  - cd CountBits/CountBits.sim/sim_1/behav/xsim/
+  - ./compile.sh
+  - ./elaborate.sh
+  - run behavioral sim via Vivado
+
+
+
  
 
