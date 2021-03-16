@@ -87,11 +87,20 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="ps_module.bd" FileRelPathName="ip/ps_module_auto_ds_0/ps_module_auto_ds_0.xci">
+          <Proxy FileSetName="ps_module_auto_ds_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ps_module.bd" FileRelPathName="ip/ps_module_axi_bram_ctrl_0_0/ps_module_axi_bram_ctrl_0_0.xci">
+          <Proxy FileSetName="ps_module_axi_bram_ctrl_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ps_module.bd" FileRelPathName="ip/ps_module_rst_ps8_1_99M_0/ps_module_rst_ps8_1_99M_0.xci">
+          <Proxy FileSetName="ps_module_rst_ps8_1_99M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ps_module.bd" FileRelPathName="ip/ps_module_zynq_ultra_ps_e_1_0/ps_module_zynq_ultra_ps_e_1_0.xci">
+          <Proxy FileSetName="ps_module_zynq_ultra_ps_e_1_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="ps_module.bd" FileRelPathName="ip/ps_module_blk_mem_gen_0_0/ps_module_blk_mem_gen_0_0.xci">
           <Proxy FileSetName="ps_module_blk_mem_gen_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ps_module.bd" FileRelPathName="ip/ps_module_xbar_7/ps_module_xbar_7.xci">
-          <Proxy FileSetName="ps_module_xbar_7"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="ps_module.bd" FileRelPathName="ip/ps_module_auto_us_0/ps_module_auto_us_0.xci">
           <Proxy FileSetName="ps_module_auto_us_0"/>
@@ -99,20 +108,11 @@
         <CompFileExtendedInfo CompFileName="ps_module.bd" FileRelPathName="ip/ps_module_CountBits_0_2/ps_module_CountBits_0_2.xci">
           <Proxy FileSetName="ps_module_CountBits_0_2"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ps_module.bd" FileRelPathName="ip/ps_module_axi_bram_ctrl_0_0/ps_module_axi_bram_ctrl_0_0.xci">
-          <Proxy FileSetName="ps_module_axi_bram_ctrl_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ps_module.bd" FileRelPathName="ip/ps_module_zynq_ultra_ps_e_1_0/ps_module_zynq_ultra_ps_e_1_0.xci">
-          <Proxy FileSetName="ps_module_zynq_ultra_ps_e_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ps_module.bd" FileRelPathName="ip/ps_module_rst_ps8_1_99M_0/ps_module_rst_ps8_1_99M_0.xci">
-          <Proxy FileSetName="ps_module_rst_ps8_1_99M_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="ps_module.bd" FileRelPathName="ip/ps_module_auto_pc_0/ps_module_auto_pc_0.xci">
           <Proxy FileSetName="ps_module_auto_pc_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ps_module.bd" FileRelPathName="ip/ps_module_auto_ds_0/ps_module_auto_ds_0.xci">
-          <Proxy FileSetName="ps_module_auto_ds_0"/>
+        <CompFileExtendedInfo CompFileName="ps_module.bd" FileRelPathName="ip/ps_module_xbar_7/ps_module_xbar_7.xci">
+          <Proxy FileSetName="ps_module_xbar_7"/>
         </CompFileExtendedInfo>
       </File>
       <Config>
@@ -242,11 +242,11 @@
         <Step Id="synth_design"/>
       </Strategy>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018" CtrlBit="true">
-        <ReportConfig DisplayName="synth_1_synth_report_utilization_0" Name="synth_1_synth_report_utilization_0" Spec="report_utilization" RunStep="synth_design" ReportFile="ps_module_wrapper_utilization_synth.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="synth_1_synth_report_utilization_0" Name="synth_1_synth_report_utilization_0" Spec="report_utilization" RunStep="synth_design" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="synth_1_synth_synthesis_report_0" Name="synth_1_synth_synthesis_report_0" Spec="" RunStep="synth_design" ReportFile="ps_module_wrapper.vds">
+        <ReportConfig DisplayName="synth_1_synth_synthesis_report_0" Name="synth_1_synth_synthesis_report_0" Spec="" RunStep="synth_design">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
       </ReportStrategy>
@@ -363,7 +363,7 @@
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_opt_report_drc_0" Name="impl_1_opt_report_drc_0" Spec="report_drc" RunStep="opt_design" ReportFile="ps_module_wrapper_drc_opted.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_opt_report_drc_0" Name="impl_1_opt_report_drc_0" Spec="report_drc" RunStep="opt_design" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
@@ -378,14 +378,14 @@
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_place_report_io_0" Name="impl_1_place_report_io_0" Spec="report_io" RunStep="place_design" ReportFile="ps_module_wrapper_io_placed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_place_report_io_0" Name="impl_1_place_report_io_0" Spec="report_io" RunStep="place_design" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_place_report_utilization_0" Name="impl_1_place_report_utilization_0" Spec="report_utilization" RunStep="place_design" ReportFile="ps_module_wrapper_utilization_placed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_place_report_utilization_0" Name="impl_1_place_report_utilization_0" Spec="report_utilization" RunStep="place_design" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_place_report_control_sets_0" Name="impl_1_place_report_control_sets_0" Spec="report_control_sets" RunStep="place_design" ReportFile="ps_module_wrapper_control_sets_placed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_place_report_control_sets_0" Name="impl_1_place_report_control_sets_0" Spec="report_control_sets" RunStep="place_design" Version="1" Minor="0">
           <ReportConfigOption Name="verbose" Type="" Value="true"/>
         </ReportConfig>
         <ReportConfig DisplayName="impl_1_place_report_incremental_reuse_0" Name="impl_1_place_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="place_design" Version="1" Minor="0" IsDisabled="true">
@@ -409,26 +409,26 @@
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_route_report_drc_0" Name="impl_1_route_report_drc_0" Spec="report_drc" RunStep="route_design" ReportFile="ps_module_wrapper_drc_routed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_route_report_drc_0" Name="impl_1_route_report_drc_0" Spec="report_drc" RunStep="route_design" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_route_report_methodology_0" Name="impl_1_route_report_methodology_0" Spec="report_methodology" RunStep="route_design" ReportFile="ps_module_wrapper_methodology_drc_routed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_route_report_methodology_0" Name="impl_1_route_report_methodology_0" Spec="report_methodology" RunStep="route_design" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_route_report_power_0" Name="impl_1_route_report_power_0" Spec="report_power" RunStep="route_design" ReportFile="ps_module_wrapper_power_routed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_route_report_power_0" Name="impl_1_route_report_power_0" Spec="report_power" RunStep="route_design" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_route_report_route_status_0" Name="impl_1_route_report_route_status_0" Spec="report_route_status" RunStep="route_design" ReportFile="ps_module_wrapper_route_status.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_route_report_route_status_0" Name="impl_1_route_report_route_status_0" Spec="report_route_status" RunStep="route_design" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_route_report_timing_summary_0" Name="impl_1_route_report_timing_summary_0" Spec="report_timing_summary" RunStep="route_design" ReportFile="ps_module_wrapper_timing_summary_routed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_route_report_timing_summary_0" Name="impl_1_route_report_timing_summary_0" Spec="report_timing_summary" RunStep="route_design" Version="1" Minor="0">
           <ReportConfigOption Name="max_paths" Type="" Value="10"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
@@ -436,10 +436,10 @@
         <ReportConfig DisplayName="impl_1_route_report_incremental_reuse_0" Name="impl_1_route_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="route_design" ReportFile="ps_module_wrapper_incremental_reuse_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_route_report_clock_utilization_0" Name="impl_1_route_report_clock_utilization_0" Spec="report_clock_utilization" RunStep="route_design" ReportFile="ps_module_wrapper_clock_utilization_routed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_route_report_clock_utilization_0" Name="impl_1_route_report_clock_utilization_0" Spec="report_clock_utilization" RunStep="route_design" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_route_report_bus_skew_0" Name="impl_1_route_report_bus_skew_0" Spec="report_bus_skew" RunStep="route_design" ReportFile="ps_module_wrapper_bus_skew_routed.rpt" Version="1" Minor="1">
+        <ReportConfig DisplayName="impl_1_route_report_bus_skew_0" Name="impl_1_route_report_bus_skew_0" Spec="report_bus_skew" RunStep="route_design" Version="1" Minor="1">
           <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
@@ -447,21 +447,21 @@
         <ReportConfig DisplayName="impl_1_route_implementation_log_0" Name="impl_1_route_implementation_log_0" Spec="" RunStep="route_design" ReportFile="ps_module_wrapper.vdi">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_post_route_phys_opt_report_timing_summary_0" Name="impl_1_post_route_phys_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="post_route_phys_opt_design" ReportFile="ps_module_wrapper_timing_summary_postroute_physopted.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_post_route_phys_opt_report_timing_summary_0" Name="impl_1_post_route_phys_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="post_route_phys_opt_design" Version="1" Minor="0">
           <ReportConfigOption Name="max_paths" Type="" Value="10"/>
           <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_post_route_phys_opt_report_bus_skew_0" Name="impl_1_post_route_phys_opt_report_bus_skew_0" Spec="report_bus_skew" RunStep="post_route_phys_opt_design" ReportFile="ps_module_wrapper_bus_skew_postroute_physopted.rpt" Version="1" Minor="1">
+        <ReportConfig DisplayName="impl_1_post_route_phys_opt_report_bus_skew_0" Name="impl_1_post_route_phys_opt_report_bus_skew_0" Spec="report_bus_skew" RunStep="post_route_phys_opt_design" Version="1" Minor="1">
           <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_bitstream_report_webtalk_0" Name="impl_1_bitstream_report_webtalk_0" Spec="" RunStep="write_bitstream" ReportFile="usage_statistics_webtalk.html">
+        <ReportConfig DisplayName="impl_1_bitstream_report_webtalk_0" Name="impl_1_bitstream_report_webtalk_0" Spec="" RunStep="write_bitstream">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_bitstream_implementation_log_0" Name="impl_1_bitstream_implementation_log_0" Spec="" RunStep="write_bitstream" ReportFile="ps_module_wrapper.vdi">
+        <ReportConfig DisplayName="impl_1_bitstream_implementation_log_0" Name="impl_1_bitstream_implementation_log_0" Spec="" RunStep="write_bitstream">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
       </ReportStrategy>

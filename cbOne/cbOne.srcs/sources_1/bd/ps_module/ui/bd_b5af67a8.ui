@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.60904",
-   "Default View_TopLeft":"0,-984",
+   "Default View_ScaleFactor":"0.451412",
+   "Default View_TopLeft":"0,-343",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
 #  -string -flagsOSRD
@@ -15,11 +15,11 @@ preplace netloc zynq_ultra_ps_e_1_pl_clk0 1 0 4 20 180 660 10 970 80 1200J
 preplace netloc zynq_ultra_ps_e_1_pl_resetn0 1 0 2 30 190 650
 preplace netloc ARESETN_1 1 1 1 670 110n
 preplace netloc rst_ps8_1_99M_peripheral_aresetn 1 1 3 N 330 970 260 1200J
-preplace netloc axi_interconnect_1_M01_AXI 1 2 1 N 160
-preplace netloc axi_interconnect_1_M00_AXI 1 2 1 N 140
-preplace netloc zynq_ultra_ps_e_1_M_AXI_HPM0_FPD 1 1 1 N 70
 preplace netloc CountBits_0_maxio 1 3 1 N 170
+preplace netloc axi_interconnect_1_M01_AXI 1 2 1 N 160
 preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 4 1 N 190
+preplace netloc zynq_ultra_ps_e_1_M_AXI_HPM0_FPD 1 1 1 N 70
+preplace netloc axi_interconnect_1_M00_AXI 1 2 1 N 140
 levelinfo -pg 1 0 340 820 1090 1350 1630 1770
 pagesize -pg 1 -db -bbox -sgen 0 0 1770 390
 "
